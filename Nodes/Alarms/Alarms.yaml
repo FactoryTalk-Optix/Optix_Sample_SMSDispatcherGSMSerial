@@ -1,0 +1,82 @@
+Name: Alarms
+Id: g=fd9d0d37f4eb0d7865cf9e698ad28117
+Type: AlarmsCategoryFolder
+Children:
+- File: _types/_types.yaml
+- File: LoadZone/LoadZone.yaml
+- Name: ExclusiveLevelAlarmSMS1
+  Id: g=b581fbd49558c8e819b3a2309bfed970
+  Type: ExclusiveLevelAlarmSMSType
+  Children:
+  - Class: Reference
+    Target: ns=9;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable3"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: SendSMSonHighHigh
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SendSMSonHigh
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonLow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SendSMSonLowLow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -10.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -15.0
+  - Name: SendSMSonOFF
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SendSMSonACK
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":20,"TextId":"AlarmMessage2"}
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0

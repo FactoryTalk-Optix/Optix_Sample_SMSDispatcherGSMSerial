@@ -1,0 +1,100 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: AlarmSMSDispatcherLogic
+  Id: g=6ba10225328d76953d8f6ee742871bac
+  Type: NetLogic
+  Children:
+  - Name: ModemSerialPort
+    Type: Alias
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_SMSDispatcherGSMSerial/CommDrivers/SerialPort1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/SerialPort"
+  - Name: Recipents
+    Type: Alias
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_SMSDispatcherGSMSerial/Security/Groups/SendSMSGroup"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/GroupType"
+  - Class: Method
+    Name: SendSingleSMSMessage
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"DestinationNumber","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Message","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: AlarmsFolder
+    Type: Alias
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_SMSDispatcherGSMSerial/Alarms"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: SIM PIN
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Description: {"LocaleId":"en-US","Text":"PIN to send to modem for unlock the sim"}
+    Value: 0
+  - Name: PIN Status
+    Type: BaseDataVariableType
+    DataType: Byte
+    Description: {"LocaleId":"en-US","Text":"Actual status of the SIM (0=Sim Unlocked, 1=PIN Required, 2=PUK Required, 3= PIN2 Required)"}
+    Value: 99
+  - Name: Registration status
+    Type: BaseDataVariableType
+    DataType: Byte
+    Description: {"LocaleId":"en-US","Text":"Status of registration of the sim in the network\n0 Modem not registered. Not looking for an operator to register with\n1 Modem registered with the same operator that owns the SIM card\n2 Modem not registered. Looking for an operator to register with\n3 Registration denied\n4 Registered to unknown network\n5 Modem registered in roaming"}
+    Value: 99
+  - Name: Actual Carrier
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"Actual carrier name of registred network"}
+    Value: ""
+  - Name: Signal Strange
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Description: {"LocaleId":"en-US","Text":"0 to 9 = Poor/insufficient\n10 to 15 = Good\n16 to 31 = Excellent\n99 = Unknown or not calculable"}
+    Value: 0
+  - Name: Number of retry
+    Type: BaseDataVariableType
+    DataType: Byte
+    Description: {"LocaleId":"en-US","Text":"Number of retry before discard the message not send"}
+    Value: 2
+  - Class: Method
+    Name: SendSingleATCommand
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"command","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"variableOutput","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: Init command
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ATE0"
+  - Name: AutoRefreshInfo
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Method
+    Name: UpdateModemStatus
+  - Name: AutoUnlockPIN
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Method
+    Name: UnlockPINSim

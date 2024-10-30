@@ -1,0 +1,46 @@
+Name: Users
+Id: g=f65060b4459d295b2706bc534e7376d9
+Type: UsersCategoryFolder
+Children:
+- Name: Fabio
+  Id: g=9a79d722b4397aba996f0179f24b700a
+  Type: UserSMS
+  Children:
+  - Name: PhoneNumber
+    Id: g=bb20f74e581b5a2fcbc1972ccc6cdb7b
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "+393483769762"
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ae223debdf75a563dc2f7950fff93dbb
+  - Name: MeasurementSystem
+    Id: g=7768cbbc2919688801aaa0e110de1376
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 0
+- Name: Andrea
+  Id: g=11c0ea2e4553323256c8a5e183afc746
+  Type: UserSMS
+  Children:
+  - Name: PhoneNumber
+    Id: g=f18ffef667a2b6ef136e860a027c0319
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "+393483769762"
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ae223debdf75a563dc2f7950fff93dbb
+  - Name: MeasurementSystem
+    Id: g=2fe4a63145e8507a72528a2abae7abde
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 0
+  - Name: LocaleId
+    Id: g=f9633b3a2ff9989b9aa994e5f1f6a3f4
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "it-IT"

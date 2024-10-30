@@ -1,0 +1,93 @@
+Name: _types
+Type: FolderType
+Children:
+- Name: DigitalAlarmSMSType
+  Id: g=a7432c60536db0da83687327b0b8276c
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=9;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: SendSMSonON
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonOFF
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonACK
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=23636c635ea8ef187478307f1e910132
+- Name: ExclusiveLevelAlarmSMSType
+  Id: g=d7daa60c76b57315119b232189b6a184
+  Supertype: ExclusiveLevelAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=9;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=d60199b14da2a5b7daffd26c934ff309
+  - Name: SendSMSonHighHigh
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonHigh
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonLow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonLowLow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonOFF
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonACK
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

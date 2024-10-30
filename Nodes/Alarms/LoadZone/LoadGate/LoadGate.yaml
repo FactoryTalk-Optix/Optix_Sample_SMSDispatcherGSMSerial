@@ -1,0 +1,107 @@
+Name: LoadGate
+Type: FolderType
+Children:
+- Name: DigitalAlarmSMS1
+  Id: g=70a0bb7f98c16e70b5b63c425b9af888
+  Type: DigitalAlarmSMSType
+  Children:
+  - Class: Reference
+    Target: ns=9;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: SendSMSonON
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SendSMSonOFF
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SendSMSonACK
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":20,"TextId":"Alarm1"}
+- Name: DigitalAlarmSMS2
+  Id: g=bfc3c74cc0cb2ec430a07960c5490716
+  Type: DigitalAlarmSMSType
+  Children:
+  - Class: Reference
+    Target: ns=9;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../../Model/Variable2"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: SendSMSonON
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SendSMSonOFF
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: SendSMSonACK
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Un messaggio senza traduzione - Message without translation"}

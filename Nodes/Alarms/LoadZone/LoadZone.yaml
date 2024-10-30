@@ -1,0 +1,4 @@
+Name: LoadZone
+Type: FolderType
+Children:
+- File: LoadGate/LoadGate.yaml

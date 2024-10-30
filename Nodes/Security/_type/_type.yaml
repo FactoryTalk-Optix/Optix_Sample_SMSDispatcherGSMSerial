@@ -1,0 +1,13 @@
+Name: _type
+Id: g=19583962422275c10d714fe3cc22d135
+Type: FolderType
+Children:
+- Name: UserSMS
+  Id: g=21ff720440467e15266c276d7750b8c5
+  Supertype: UserType
+  Children:
+  - Name: PhoneNumber
+    Id: g=761abda0b1adb3a7e8492a64d778e9f5
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""

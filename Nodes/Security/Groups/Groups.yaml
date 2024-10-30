@@ -1,0 +1,10 @@
+Name: Groups
+Id: g=8a9a86f45acf34fca71e7a933d0800d7
+Type: GroupsCategoryFolder
+Children:
+- Name: SendSMSGroup
+  Id: g=ae223debdf75a563dc2f7950fff93dbb
+  Type: GroupType
+- Name: Maintenence
+  Id: g=ede0780661c2c68c0969b182d286c012
+  Type: GroupType

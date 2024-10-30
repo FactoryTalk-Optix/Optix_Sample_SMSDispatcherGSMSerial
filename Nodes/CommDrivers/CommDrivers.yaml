@@ -1,0 +1,58 @@
+Name: CommDrivers
+Type: CommDriversCategoryFolder
+Children:
+- Name: SerialPort1
+  Id: g=b5947b90a3ea849875a1efa2bc7218ae
+  Type: SerialPort
+  Children:
+  - Name: PortName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "/dev/ttymxc0"
+  - Name: Baudrate
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 9600
+  - Name: DataSize
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+  - Name: Parity
+    Type: BaseDataVariableType
+    DataType: Parity
+    Value: 0
+  - Name: StopBits
+    Type: BaseDataVariableType
+    DataType: StopBits
+    Value: 0
+  - Name: FlowControl
+    Type: BaseDataVariableType
+    DataType: FlowControl
+    Value: 0
+  - Name: Timeout
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: CommunicationStatus
+    Type: BaseDataVariableType
+    DataType: CommunicationStatus
+    AccessLevel: Read
+    Value: 0
+  - Class: Reference
+    Target: ns=15;i=9
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=10
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=11
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=14
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=17
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=22
+    Direction: Forward

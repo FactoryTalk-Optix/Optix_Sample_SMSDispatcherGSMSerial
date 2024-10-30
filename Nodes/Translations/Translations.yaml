@@ -1,0 +1,38 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [23,3],
+    "Body": [
+     "","en-US","it-IT",
+     "Acknowledge","Acknowledge","Riconosci",
+     "Acknowledge All","Acknowledge All","Riconosci tutti",
+     "Confirm","Confirm","Conferma",
+     "Confirm All","Confirm All","Conferma tutti",
+     "SourceName","Source Variable","Variabile sorgente",
+     "Timestamp","Timestamp","Timestamp",
+     "Name","Name","Nome",
+     "Message","Message","Messaggio",
+     "Active","Active","Attivo",
+     "Acked","Acked","Riconosciuto",
+     "Confirmed","Confirmed","Confermato",
+     "Severity","Severity","Gravità",
+     "Alarm1","My alarm in English","Il mio allarme in italiano",
+     "Groups","Groups","Gruppi",
+     "Locale:","Locale:","Locale:",
+     "Create","Create","Crea",
+     "Delete","Delete","Cancella",
+     "Apply","Apply","Applica",
+     "Cancel","Cancel","Annulla",
+     "AlarmMessage1","Test message Uniqo Dispatcher","Messaggio di test Uniqo Dispatcher",
+     "AlarmMessage2","Core temperature is abnormal!","La temperatura del core non è normale!",
+     "AlarmMessage3","Pre-chamber temperture is abnormal!","Temperatura della pre-camera non è normale!"
+    ]
+   }
