@@ -19,7 +19,6 @@ Children:
     Type: BaseVariableType
     DataType: MeasurementSystem
     ReferenceType: HasProperty
-    Value: 0
 - Name: Andrea
   Id: g=11c0ea2e4553323256c8a5e183afc746
   Type: UserSMS
@@ -37,7 +36,6 @@ Children:
     Type: BaseVariableType
     DataType: MeasurementSystem
     ReferenceType: HasProperty
-    Value: 0
   - Name: LocaleId
     Id: g=f9633b3a2ff9989b9aa994e5f1f6a3f4
     Type: BaseVariableType

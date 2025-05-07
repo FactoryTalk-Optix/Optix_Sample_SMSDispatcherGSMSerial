@@ -20,15 +20,12 @@ Children:
   - Name: Parity
     Type: BaseDataVariableType
     DataType: Parity
-    Value: 0
   - Name: StopBits
     Type: BaseDataVariableType
     DataType: StopBits
-    Value: 0
   - Name: FlowControl
     Type: BaseDataVariableType
     DataType: FlowControl
-    Value: 0
   - Name: Timeout
     Type: BaseDataVariableType
     DataType: Duration
@@ -37,7 +34,6 @@ Children:
     Type: BaseDataVariableType
     DataType: CommunicationStatus
     AccessLevel: Read
-    Value: 0
   - Class: Reference
     Target: ns=15;i=9
     Direction: Forward

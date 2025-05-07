@@ -17,11 +17,9 @@ Children:
   - Name: NormalStateValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -48,11 +46,34 @@ Children:
   - Name: SendSMSonACK
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Message
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":20,"TextId":"Alarm1"}
+  - Class: Reference
+    Target: ns=9;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=154
+    Direction: Forward
 - Name: DigitalAlarmSMS2
   Id: g=bfc3c74cc0cb2ec430a07960c5490716
   Type: DigitalAlarmSMSType
@@ -69,11 +90,9 @@ Children:
   - Name: NormalStateValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -96,12 +115,34 @@ Children:
   - Name: SendSMSonOFF
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonACK
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Message
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"Un messaggio senza traduzione - Message without translation"}
+  - Class: Reference
+    Target: ns=9;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=154
+    Direction: Forward

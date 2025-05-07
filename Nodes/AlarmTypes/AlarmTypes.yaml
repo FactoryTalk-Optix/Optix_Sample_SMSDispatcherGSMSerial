@@ -9,97 +9,76 @@ Children:
   - Name: NormalState
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: ActiveState
     Type: TwoStateVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: Id
       Type: PropertyType
       DataType: Boolean
-      Value: false
   - Name: InputNode
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: SuppressedOrShelved
     Type: PropertyType
     DataType: Boolean
-    Value: false
   - Name: AckedState
     Type: TwoStateVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: Id
       Type: PropertyType
       DataType: Boolean
-      Value: false
   - Class: Reference
     Target: ns=0;i=9111
     Direction: Forward
   - Name: ConditionClassId
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: ConditionClassName
     Type: PropertyType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: ConditionName
     Type: PropertyType
     DataType: String
-    Value: ""
   - Name: BranchId
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: Retain
     Type: PropertyType
     DataType: Boolean
-    Value: false
   - Name: EnabledState
     Type: TwoStateVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: Id
       Type: PropertyType
       DataType: Boolean
-      Value: false
   - Name: Quality
     Type: ConditionVariableType
     DataType: StatusCode
-    Value: 0
     Children:
     - Name: SourceTimestamp
       Type: PropertyType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
   - Name: LastSeverity
     Type: ConditionVariableType
     DataType: UInt16
-    Value: 0
     Children:
     - Name: SourceTimestamp
       Type: PropertyType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
   - Name: Comment
     Type: ConditionVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: SourceTimestamp
       Type: PropertyType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
   - Name: ClientUserId
     Type: PropertyType
     DataType: String
     ReferenceType: HasComponent
-    Value: ""
   - Class: Reference
     Target: ns=0;i=9027
     Direction: Forward
@@ -112,47 +91,36 @@ Children:
   - Name: EventId
     Type: PropertyType
     DataType: ByteString
-    Value: ""
   - Name: EventType
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: SourceNode
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: SourceName
     Type: PropertyType
     DataType: String
-    Value: ""
   - Name: Time
     Type: PropertyType
     DataType: UtcTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: ReceiveTime
     Type: PropertyType
     DataType: UtcTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: Message
     Type: PropertyType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: Severity
     Type: PropertyType
     DataType: UInt16
-    Value: 0
   - Name: SendSMSonON
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonOFF
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonACK
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
 - Name: AlarmType_ExclusiveLevelAlarmSMSType
   Id: g=d60199b14da2a5b7daffd26c934ff309
   Supertype: ExclusiveLevelAlarmType
@@ -164,102 +132,80 @@ Children:
     - Name: CurrentState
       Type: FiniteStateVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: Id
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: ActiveState
     Type: TwoStateVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: Id
       Type: PropertyType
       DataType: Boolean
-      Value: false
   - Name: InputNode
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: SuppressedOrShelved
     Type: PropertyType
     DataType: Boolean
-    Value: false
   - Name: AckedState
     Type: TwoStateVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: Id
       Type: PropertyType
       DataType: Boolean
-      Value: false
   - Class: Reference
     Target: ns=0;i=9111
     Direction: Forward
   - Name: ConditionClassId
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: ConditionClassName
     Type: PropertyType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: ConditionName
     Type: PropertyType
     DataType: String
-    Value: ""
   - Name: BranchId
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: Retain
     Type: PropertyType
     DataType: Boolean
-    Value: false
   - Name: EnabledState
     Type: TwoStateVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: Id
       Type: PropertyType
       DataType: Boolean
-      Value: false
   - Name: Quality
     Type: ConditionVariableType
     DataType: StatusCode
-    Value: 0
     Children:
     - Name: SourceTimestamp
       Type: PropertyType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
   - Name: LastSeverity
     Type: ConditionVariableType
     DataType: UInt16
-    Value: 0
     Children:
     - Name: SourceTimestamp
       Type: PropertyType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
   - Name: Comment
     Type: ConditionVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     Children:
     - Name: SourceTimestamp
       Type: PropertyType
       DataType: UtcTime
-      Value: "1601-01-01T00:00:00.0000000"
   - Name: ClientUserId
     Type: PropertyType
     DataType: String
     ReferenceType: HasComponent
-    Value: ""
   - Class: Reference
     Target: ns=0;i=9027
     Direction: Forward
@@ -272,56 +218,42 @@ Children:
   - Name: EventId
     Type: PropertyType
     DataType: ByteString
-    Value: ""
   - Name: EventType
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: SourceNode
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: SourceName
     Type: PropertyType
     DataType: String
-    Value: ""
   - Name: Time
     Type: PropertyType
     DataType: UtcTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: ReceiveTime
     Type: PropertyType
     DataType: UtcTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: Message
     Type: PropertyType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: Severity
     Type: PropertyType
     DataType: UInt16
-    Value: 0
   - Name: SendSMSonHighHigh
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonHigh
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonLow
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonLowLow
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonOFF
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonACK
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false

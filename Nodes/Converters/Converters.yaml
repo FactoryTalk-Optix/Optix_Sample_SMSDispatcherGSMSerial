@@ -6,7 +6,7 @@ Children:
   Supertype: ValueMapConverter
   ReferenceType: HasComponent
   Children:
-  - Name: Pairs
+  - Name: ns=3;Pairs
     Type: BaseObjectType
     ModellingRule: None
     Children:
@@ -18,7 +18,6 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         ModellingRule: None
-        Value: 0
       - Name: Value
         Type: BaseDataVariableType
         DataType: String
@@ -99,7 +98,7 @@ Children:
   Supertype: ValueMapConverter
   ReferenceType: HasComponent
   Children:
-  - Name: Pairs
+  - Name: ns=3;Pairs
     Type: BaseObjectType
     ModellingRule: None
     Children:
@@ -111,7 +110,6 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         ModellingRule: None
-        Value: 0
       - Name: Value
         Type: BaseDataVariableType
         DataType: String
@@ -206,7 +204,7 @@ Children:
   Supertype: ValueMapConverter
   ReferenceType: HasComponent
   Children:
-  - Name: Pairs
+  - Name: ns=3;Pairs
     Type: BaseObjectType
     ModellingRule: None
     Children:
@@ -218,7 +216,6 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         ModellingRule: None
-        Value: 0
       - Name: Value
         Type: BaseDataVariableType
         DataType: String

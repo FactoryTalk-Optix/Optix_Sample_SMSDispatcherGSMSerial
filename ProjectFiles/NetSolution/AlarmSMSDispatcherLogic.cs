@@ -193,7 +193,7 @@ public class AlarmSMSDispatcherLogic : BaseNetLogic
             else
             {
                 if (Project.Current.Owner.Find("RetainedAlarms") != null && alarmsNode == null)
-                    alarmsNode = Project.Current.Owner.Find("RetainedAlarms").Children.First(x => x.NodeClass == NodeClass.Object);
+                    alarmsNode = Project.Current.Owner.Find("RetainedAlarms").Children.First(x => x.NodeClass == NodeClass.Object && x.BrowseName.Contains("-"));
             }
             List<IUANode> newAlarms = alarmsNode.Children.Except(memoryAlarmsNodeList).ToList();
             List<IUANode> oldAlarms = memoryAlarmsNodeList.Except(alarmsNode.Children).ToList();

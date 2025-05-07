@@ -20,7 +20,6 @@ Children:
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -43,7 +42,6 @@ Children:
   - Name: SendSMSonHigh
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: SendSMSonLow
     Type: BaseDataVariableType
     DataType: Boolean
@@ -51,7 +49,6 @@ Children:
   - Name: SendSMSonLowLow
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: HighLimit
     Type: BaseDataVariableType
     DataType: Double
@@ -80,3 +77,27 @@ Children:
     Type: BaseDataVariableType
     DataType: Double
     Value: 20.0
+  - Class: Reference
+    Target: ns=9;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=154
+    Direction: Forward

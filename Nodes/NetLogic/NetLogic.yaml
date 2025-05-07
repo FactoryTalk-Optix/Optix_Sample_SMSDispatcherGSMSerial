@@ -46,7 +46,6 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Description: {"LocaleId":"en-US","Text":"PIN to send to modem for unlock the sim"}
-    Value: 0
   - Name: PIN Status
     Type: BaseDataVariableType
     DataType: Byte
@@ -61,12 +60,10 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Description: {"LocaleId":"en-US","Text":"Actual carrier name of registred network"}
-    Value: ""
   - Name: Signal Strange
     Type: BaseDataVariableType
     DataType: UInt16
     Description: {"LocaleId":"en-US","Text":"0 to 9 = Poor/insufficient\n10 to 15 = Good\n16 to 31 = Excellent\n99 = Unknown or not calculable"}
-    Value: 0
   - Name: Number of retry
     Type: BaseDataVariableType
     DataType: Byte
@@ -89,12 +86,10 @@ Children:
   - Name: AutoRefreshInfo
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Class: Method
     Name: UpdateModemStatus
   - Name: AutoUnlockPIN
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Class: Method
     Name: UnlockPINSim
